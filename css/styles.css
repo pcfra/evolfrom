@@ -388,9 +388,8 @@ p { margin: 0 0 1em; }
 /* ---------- Contacto ---------- */
 .contacto-grid {
   display: grid;
-  grid-template-columns: 1.1fr .9fr;
-  gap: 56px;
-  align-items: start;
+  grid-template-columns: 1fr;
+  max-width: 560px;
 }
 .contact-card {
   display: flex;
@@ -416,8 +415,6 @@ p { margin: 0 0 1em; }
   font-size: .95rem;
   resize: vertical;
 }
-.contacto-map { min-height: 420px; border-radius: var(--radius); overflow: hidden; box-shadow: 0 16px 40px rgba(20,64,107,.12); }
-
 /* ---------- Footer ---------- */
 .site-footer { background: var(--navy-dark); color: rgba(255,255,255,.85); padding: 64px 0 0; }
 .footer-inner {
@@ -528,7 +525,6 @@ p { margin: 0 0 1em; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .calc-row { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; }
-  .contacto-map { min-height: 300px; }
   .quality-section { padding: 80px 0; }
   .quality-grid { grid-template-columns: 1fr; }
   .quality-item-wide { grid-column: span 1; }
